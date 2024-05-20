@@ -1,0 +1,390 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to top, #336699 24%, #996633 89%);
+   
+   
+}
+
+img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 3%;
+    
+}
+
+header {
+    background-image:linear-gradient(to bottom, #996633 0%, #663300 51%);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+section{
+    text-align: center;
+}
+
+.logo img {
+    width: 100px;
+    border-radius: 5px;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+    position: relative;
+  
+}
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-shadow: 2px 2px 5px rgb(39, 34, 34);
+    text-transform: uppercase;
+    
+}
+nav ul li::after {
+   content: '';
+   height: 3px;
+   width: 0%;
+   background: #15ff00;
+   position: absolute;
+   left: 0;
+   bottom: -10px;
+   transition: 0.5;
+  
+} 
+nav ul li:hover::after {
+   width: 100%;
+}
+
+.button:hover {
+    background-color: #04AA6D; /* Green */
+    color: white;
+}
+
+.Container{
+    padding: 15%;
+    margin: 0 auto;
+    background-image: url("pictures/BG PICTURE.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.Home-content {
+    margin-top: 15%;
+    position: center;
+}
+.Home-content h2,p{
+    padding-top: 5px;
+    text-align: justify;
+    font-size:medium;
+    color: #f4faff;
+    position: center;
+    position: center;
+}
+
+
+.about {
+    padding: 15px;
+    margin: 15px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background: linear-gradient(to bottom, #996633 25%, #336699 100%);
+    border-radius: 25px;
+    margin-left: 100px;
+    margin-right: 5%;
+   
+   
+}
+.about-content {
+    flex: 1;
+    padding: 0 20px;
+   font-family:Verdana, Geneva, Tahoma, sans-serif;
+   font-size: large;
+  
+}
+
+.about h2 {
+    margin-bottom: 20px;
+   
+
+}
+.about p {
+    margin-bottom: 20px;
+}
+
+.about-image {
+    flex: 1;
+}
+
+.about-image img {
+    width: 10%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.featured-models {
+    padding: 25px ;
+    text-align: center;
+    background: linear-gradient(to top left, #003366 0%, #669999 100%);
+    margin: 50px;
+    border-radius: 25px;
+    text-shadow: 2px 2px 5px rgb(39, 34, 34);
+}
+.contact{
+    background: linear-gradient(to top left, #003366 0%, #669999 100%);
+    padding: 25px;
+    border-radius: 15px;
+    margin-left: 500px;
+    margin-right: 500px; 
+}
+
+
+
+.featured-models h2,
+.contact h2 {
+    margin-bottom: 10px;
+   
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+* {
+    box-sizing: border-box;
+  }
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.yamaha-class {
+    padding: 25px ;
+    text-align: center;
+    background: linear-gradient(to top left, #003366 0%, #669999 100%);
+    margin: 50px;
+    border-radius: 25px;
+}
+.yamaha-class h2{
+    text-align: center;
+    text-shadow: 2px 2px 5px rgb(39, 34, 34);
+
+}
+.honda-class {
+    padding: 25px ;
+    text-align: center;
+    background: linear-gradient(to top left, #003366 0%, #669999 100%);
+    margin: 50px;
+    border-radius: 25px;
+}
+.honda-class h2{
+    text-align: center;
+    text-shadow: 2px 2px 5px rgb(39, 34, 34);
+
+}
+
+.CFMOTO-class{
+  padding: 25px ;
+  text-align: center;
+  background: linear-gradient(to top left, #003366 0%, #669999 100%);
+  margin: 50px;
+  border-radius: 25px;
+}
+.CFMOTO-class h2{
+  text-align: center;
+  text-shadow: 2px 2px 5px rgb(39, 34, 34);
+
+}
+.BMW-class{
+  padding: 25px ;
+  text-align: center;
+  background: linear-gradient(to top left, #003366 0%, #669999 100%);
+  margin: 50px;
+  border-radius: 25px;
+}
+.BMW-class h2{
+  text-align: center;
+  text-shadow: 2px 2px 5px rgb(39, 34, 34);
+
+}
+
+
+
+/*for modal*/
+/* Styles for the image gallery */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .thumbnail {
+    width: 200px;
+    height: auto;
+    margin: 10px;
+    cursor: pointer;
+  }
+  
+  /* Styles for the modal */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 50px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.9);
+  }
+  
+  .modal-content {
+    margin: auto;
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+  }
+  
+  .close {
+    color: #fff;
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+.homeButton {
+    padding: 15px;
+    margin: 15px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background: linear-gradient(to top, #663300 5%, #996633 54%);
+    border-radius: 25px;
+    margin-left: 500px;
+    margin-right: 500px;
+   
+    transition: 0.5
+      
+}
+
+.homeButton button:hover {
+    background-color: #04AA6D; /* Green */
+    color: white;
+
+}
+
+/*  for smaller screens */
+@media only screen and (max-width: 600px) {
+    .Container {
+      padding: 10%;
+    }
+    
+    .nav ul li {
+      margin-right: 10px;
+    }
+    
+    .about {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+    
+    .contact {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+    
+    .homeButton {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+    
+    .yamaha-class,
+    .honda-class,
+    .CFMOTO-class,
+    .BMW-class,
+    .featured-models {
+      margin: 20px;
+    }
+    
+    .row::after {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    
+    .column {
+      width: 100%;
+    }
+    
+    .footer {
+      padding: 10px;
+    }
+  }
+  
+  /* for larger screens */
+  @media only screen and (min-width: 601px) {
+    .nav ul li {
+      margin-right: 20px;
+    }
+    
+    .about {
+      margin-left: 100px;
+      margin-right: 5%;
+    }
+    
+    .contact {
+      margin-left: 500px;
+      margin-right: 500px;
+    }
+    
+    .homeButton {
+      margin-left: 500px;
+      margin-right: 500px;
+    }
+  }
+
+  
